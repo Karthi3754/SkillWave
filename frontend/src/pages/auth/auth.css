@@ -1,0 +1,249 @@
+/* auth.css - Comprehensive styling for authentication pages and account profile */
+
+:root {
+  --primary-color: #3a86ff;
+  --primary-hover: #2a75e8;
+  --secondary-color: #4361ee;
+  --accent-color: #4895ef;
+  --danger-color: #e63946;
+  --success-color: #2a9d8f;
+  --text-primary: #2b2d42;
+  --text-secondary: #5c677d;
+  --bg-light: #f7f9fc;
+  --card-bg: #ffffff;
+  --border-color: #e1e5eb;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --transition: all 0.3s ease;
+}
+
+/* ========== Auth Pages Layout ========== */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem 1rem;
+  background-color: var(--bg-light);
+  font-family: 'Roboto', sans-serif;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 450px;
+  padding: 2.5rem;
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.auth-form:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.auth-form h2 {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.auth-form h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+/* Form Elements */
+.auth-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.auth-form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  transition: var(--transition);
+  margin-bottom: 1rem;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(74, 149, 239, 0.15);
+}
+
+/* Common Button Styling */
+.common-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.common-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.common-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.common-btn svg {
+  font-size: 1.2rem;
+}
+
+/* Link Styling */
+.auth-form p {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.auth-form a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.auth-form a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* ReCAPTCHA Styling */
+.g-recaptcha {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* ========== Profile/Account Styling ========== */
+.profile {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+  position: relative;
+}
+
+.profile h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.profile-info {
+  padding: 1.5rem;
+  background-color: var(--bg-light);
+  border-radius: var(--radius-md);
+  margin-top: 1rem;
+}
+
+.profile-info p {
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.profile-info p strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.profile-info button {
+  margin: 0.75rem 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+.profile-info button[style*="background: red"] {
+  background-color: var(--danger-color) !important;
+}
+
+.profile-info button[style*="background: red"]:hover {
+  background-color: #d32f2f !important;
+}
+
+/* ========== Responsive Adjustments ========== */
+@media (min-width: 768px) {
+  .profile-info button {
+    width: auto;
+    margin-right: 1rem;
+  }
+  
+  .profile-info p strong {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .auth-form {
+    padding: 1.5rem;
+  }
+  
+  .auth-form h2,
+  .profile h2 {
+    font-size: 1.5rem;
+  }
+  
+  .profile {
+    padding: 1.5rem;
+    margin: 1.5rem 1rem;
+  }
+}

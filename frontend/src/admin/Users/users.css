@@ -1,0 +1,133 @@
+/* Admin Users Table Styling */
+.users {
+  padding: 10px;
+}
+
+.users h1 {
+  font-size: 1.8rem;
+  color: #334155;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.users-table-container {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.users-table thead {
+  background-color: #f8fafc;
+}
+
+.users-table th {
+  padding: 15px 20px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.users-table td {
+  padding: 15px 20px;
+  color: #334155;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.users-table tr:last-child td {
+  border-bottom: none;
+}
+
+.users-table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.users-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.users-table .role-badge {
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.users-table .role-admin {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.users-table .role-superadmin {
+  background-color: #e0e7ff;
+  color: #4f46e5;
+}
+
+.users-table .role-user {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+.update-role-btn {
+  background-color: #4a6cf7;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.update-role-btn:hover {
+  background-color: #3a5ce5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(74, 108, 247, 0.2);
+}
+
+.update-role-btn:active {
+  transform: translateY(0);
+}
+
+.user-count {
+  background-color: #e2e8f0;
+  color: #475569;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 50px;
+  margin-left: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .users-table th,
+  .users-table td {
+    padding: 10px 15px;
+  }
+  
+  .users-table .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .users h1 {
+    font-size: 1.5rem;
+  }
+}
