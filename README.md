@@ -9,7 +9,7 @@ SkillWave is a modern eLearning platform built with the MERN stack, designed to 
 - 🧭 Student dashboard to explore and enroll in courses
 - 🎓 Organized course pages with detailed content
 - ⚡ Fast and responsive UI using React + Vite
-- 🎨 Clean and modular SCSS styling
+- 🎨 Clean and modular CSS styling
 
 ## 🛠️ Tech Stack
 
