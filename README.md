@@ -8,6 +8,7 @@ SkillWave is a modern eLearning platform built with the MERN stack, designed to 
 - 📚 Admin panel to manage courses and content
 - 🧭 Student dashboard to explore and enroll in courses
 - 🎓 Organized course pages with detailed content
+- 💳 Secure payment handling via Razorpay.
 - ⚡ Fast and responsive UI using React + Vite
 - 🎨 Clean and modular CSS styling
 
@@ -24,5 +25,6 @@ SkillWave is a modern eLearning platform built with the MERN stack, designed to 
 - Express.js
 - MongoDB
 - JWT Authentication
+- Razorpay (for Payment)
 
 Happy Coding ✨
